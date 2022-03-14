@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    margin:0px;
+    padding: 0px;
+
+
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+
+:root {
+--corfundo:#030303;
+--cornav:#194658;
+}
+
+
+
+
+
+
+
+body {
+    background-color: var(--corfundo);
+}
+
+nav {
+    background-color: var(--cornav);
+    padding: 4px;
+    font-family:'Nothing You Could Do', cursive ;
+    text-align: center;
+    
+    
+}
+
+nav > a {
+    text-decoration: none;
+    color:white;
+    padding:5px 20px;
+    
+}
+nav > a:hover {
+    color:rgb(68, 188, 218);
+    transition: 0.5s;
+    background-color: #030303;
+    border-radius: 10px;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+
+}
