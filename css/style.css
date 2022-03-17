@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/*@charset "UTF-8";
 
 * {
     margin:0px;
@@ -63,8 +63,7 @@ main {
     padding-top: 20px;
     margin-top: 10px;
     
-    /* img main */
-   
+    /* img main 
     
 }
 
@@ -81,7 +80,7 @@ main> section.sobreojogo> div.planodefundo{
       
 }
 
-/*texto main*/
+/*texto main*
 
  main> section> h1 {
      padding-left:10px; 
@@ -93,7 +92,7 @@ main> section.sobreojogo> div.planodefundo{
      text-align: center;
      font-family:'Nothing You Could Do', cursive ;
  }
- /*conteudo das div.conteudo*/
+ /*conteudo das div.conteudo*
  main> section.sobreojogo> div.conteudo {
      border:1px solid white;
      max-width: 1000px;
@@ -101,7 +100,7 @@ main> section.sobreojogo> div.planodefundo{
      height: 250px;
  }
 
-/*conteudo imagem da div.conteudo*/
+/*conteudo imagem da div.conteudo*
 main>section.sobreojogo> div.conteudo> picture> img {
     height: 200px;
     width: 200px;
@@ -126,7 +125,7 @@ main > section.sobreojogo> div.conteudo > h2 {
     margin-bottom:20px;
 }
 
- /*imagem do gaius*/
+ /*imagem do gaius*
 
  main > section > picture.imagem1top {
      float: left;
@@ -136,3 +135,96 @@ main > section.sobreojogo> div.conteudo > h2 {
    height: 300px;
    width: 300px;
  }
+*/
+
+@charset "UFT-8";
+
+* {
+    margin: 0;
+    padding: 0;
+   font-family: sans-serif;
+}
+
+div.conteiner {
+    width: 100%;
+    min-width:100%;
+    padding-left:8%;
+    padding-right:8%;
+    box-sizing: border-box;
+    overflow:hidden;
+}
+
+div.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.conteiner > div.navbar > img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+div.conteiner>div.navbar> nav{
+flex:1;
+text-align: right;
+} 
+
+div.conteiner>div.navbar> nav > ul li {
+list-style: none;
+display: inline-block;
+margin-right: 30px;
+}
+
+div.conteiner>div.navbar> nav > ul li> a {
+ text-decoration: none;
+ color:black;
+    }
+div.conteiner>div.navbar > nav > ul li > a:hover {
+    color:rgb(87, 161, 167);
+}    
+
+main.index-main > div.col-1 > h1 {
+    font-size:50px ;
+    
+}
+main.index-main > div.col-1 > h2 a  {
+    font-size: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+main.index-main > div.col-1 > h2 a:hover  {
+
+    color: rgb(27, 205, 218);
+
+}
+main.index-main > div.col-1 > p {
+margin-top: 50px;
+color: rgb(0, 0, 0);
+}
+main.index-main {
+    display: flex;
+    justify-content: space-between;
+    margin:100px 0;
+}
+main.index-main > div.col-1 {
+    flex-basis:40%;
+    position:relative;
+    margin-left: 40px;
+
+}
+
+main.index-main > div.col-2 {
+
+flex-basis:70%;
+align-items: center;
+
+ }
+
+main.index-main > div.col-2 img {
+height: 100%;
+width: 100%;
+opacity: 50%;
+}
