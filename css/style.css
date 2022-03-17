@@ -1,230 +1,65 @@
-/*@charset "UTF-8";
-
-* {
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-
-
-:root {
---corfundo:#030303;
---cornav:#34977C;
-}
-
-
-
-
-
-
-
-body {
-    background-color:var(--corfundo);
-    width: 100%;
-    
-}
-
-nav {
-    background-color:#F2E3D5;
-    padding: 4px;
-    font-family:'Nothing You Could Do', cursive ;
-    text-align: center;
-    border-bottom: 2px solid #3CA6A6;
-    padding-bottom: 10px;
-}
-
-nav > a {
-    text-decoration: none;
-    color:rgb(0, 0, 0);
-    padding:5px 20px;
-    
-    
-}
-nav > a:hover {
-    color:rgb(68, 188, 218);
-    transition: 0.5s;
-    border-left: 2px solid #3CA6A6;
-    border-right:2px solid #3CA6A6;
-    border-radius: 5px;
-
-    
-}
-
-main {
-    min-width: 300px;
-    max-width: 1200px;
-    background-color:#012e402c;
-    margin: auto;
-    padding-top: 20px;
-    margin-top: 10px;
-    
-    /* img main 
-    
-}
-
-main> section.sobreojogo> div.planodefundo{
-    
-      background-image:url('../img/fundo.jpg');
-      background-repeat: no-repeat;
-      background-position: 55% 0;
-      background-size: 100%;
-      position: absolute;
-      width: 80%;
-      height: 100%;
-      opacity: 20%;
-      
-}
-
-/*texto main*
-
- main> section> h1 {
-     padding-left:10px; 
-     margin-bottom: 10px;
-     font-size: 30px;
-     font-weight: bolder;
-     color:white;
-     background-color: #3ca6a683;
-     text-align: center;
-     font-family:'Nothing You Could Do', cursive ;
- }
- /*conteudo das div.conteudo*
- main> section.sobreojogo> div.conteudo {
-     border:1px solid white;
-     max-width: 1000px;
-     min-width:300px;
-     height: 250px;
- }
-
-/*conteudo imagem da div.conteudo*
-main>section.sobreojogo> div.conteudo> picture> img {
-    height: 200px;
-    width: 200px;
-    float: left;
-}
-
-
-
- main > section.sobreojogo >div.conteudo > p { 
-     color:white;
-     text-indent: 30px;
-     padding-bottom: 10px;
-     font-weight: bolder;
-     text-align-last: center;
-     margin-bottom: 30px;
- }
-
-main > section.sobreojogo> div.conteudo > h2 {
-    color:white;
-    font-weight: bolder;
-    text-align: ;
-    margin-bottom:20px;
-}
-
- /*imagem do gaius*
-
- main > section > picture.imagem1top {
-     float: left;
-
-}
- main > section > picture.imagem1top>  img {
-   height: 300px;
-   width: 300px;
- }
-*/
 
 @charset "UFT-8";
-
+@media screen and (max-width: 500px) {
+    header.conteiner>div.navbar> nav{
+        
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        } 
+        
+    header.conteiner>div.navbar> nav > ul li {
+        margin-left: 0;
+        margin-right: 0;
+        display:inline-block;
+        font-size: 10px;
+        font-weight: bolder;
+        
+        }
+    
+}
 * {
     margin: 0;
     padding: 0;
    font-family: sans-serif;
 }
+body {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
 
-div.conteiner {
-    width: 100%;
-    min-width:100%;
-    padding-left:8%;
-    padding-right:8%;
-    box-sizing: border-box;
-    overflow:hidden;
+ header.conteiner {
+    height:80px;
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:20px;
+    
 }
 
 div.navbar {
     width: 100%;
-    display: flex;
-    align-items: center;
+    display: inline;
+    
+    
 }
-
-div.conteiner > div.navbar > img {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    margin: 30px 0;
-}
-div.conteiner>div.navbar> nav{
+header.conteiner>div.navbar> nav{
 flex:1;
 text-align: right;
 } 
 
-div.conteiner>div.navbar> nav > ul li {
+header.conteiner>div.navbar> nav > ul li {
 list-style: none;
 display: inline-block;
-margin-right: 30px;
+margin-right: 20px;
+
 }
 
-div.conteiner>div.navbar> nav > ul li> a {
+header.conteiner>div.navbar> nav > ul li> a {
  text-decoration: none;
  color:black;
     }
-div.conteiner>div.navbar > nav > ul li > a:hover {
+header.conteiner>div.navbar > nav > ul li > a:hover {
     color:rgb(87, 161, 167);
 }    
 
-main.index-main > div.col-1 > h1 {
-    font-size:50px ;
-    
-}
-main.index-main > div.col-1 > h2 a  {
-    font-size: 10px;
-    text-decoration: none;
-    color: black;
-    
-}
-main.index-main > div.col-1 > h2 a:hover  {
-
-    color: rgb(27, 205, 218);
-
-}
-main.index-main > div.col-1 > p {
-margin-top: 50px;
-color: rgb(0, 0, 0);
-}
-main.index-main {
-    display: flex;
-    justify-content: space-between;
-    margin:100px 0;
-}
-main.index-main > div.col-1 {
-    flex-basis:40%;
-    position:relative;
-    margin-left: 40px;
-
-}
-
-main.index-main > div.col-2 {
-
-flex-basis:70%;
-align-items: center;
-
- }
-
-main.index-main > div.col-2 img {
-height: 100%;
-width: 100%;
-opacity: 50%;
-}
